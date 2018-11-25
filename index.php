@@ -25,7 +25,7 @@
           				Cadastros
         				</a>
         				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          					<a class="dropdown-item" href="#">Cadastro de Pacientes</a>
+          					<a class="dropdown-item" href="cad-pac">Cadastro de Pacientes</a>
           					<a class="dropdown-item" href="#">Cadastro de Medicamentos</a>
         				</div>
       				</li>
