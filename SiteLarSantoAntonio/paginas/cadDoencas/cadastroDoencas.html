@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cadastro de Doenças - Lar Santo Antônio</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="pacienteAjax.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>	
+	</head>
+
+	<body>		
+	<!------------------------------------------Menu------------------------------------------->
+		<script src="menu.php"></script>
+		<header>
+			<div class="jumbotron">
+				<div class="container">
+					<div class="row"> 
+						<div class="col-12"> 
+							<h1 class="text-center">Cadastro de Doenças</h1>
+						</div>
+					</div>  
+				</div>
+			</div>
+		</header>
+	<!------------------------------------------Menu------------------------------------------->
+	<!------------------------------------------Informações Doença--------------------------->
+	<div class="container">
+		<form name="frmDoencas" method="post" action="verDoe.php" id="forDoencas">
+			<div class="form-row">
+				<div class="col">
+					<p>Nome da doença:</p>
+					<input class="form-control" type="text" placeholder="Digite o nome da doença" name="doe_nome" value="<?php if(isset($_POST["doe_nome"])) echo $_POST["doe_nome"]?>">
+				</div>
+				<div class="col">
+					<p>Informações sobre a doença:</p>
+					<textarea class="form-control" name="doe_obs" placeholder="Informações adicionais sobre a doença." value="<?php if(isset($_POST["doe_obs"])) echo $_POST["doe_obs"]?>"></textarea>
+				</div>
+			</div>
+			
+			<div class="form-row">
+				<div class="col-4">
+				
+				</div>
+				<div class="col-4">
+					<hr></hr>
+					<center>
+						<button onClick="submeterNovoRegistro('forDoencas')" class="btn btn-dark">Cadastrar</button>
+					</center>
+				</div>
+				<div class="col-4">
+				
+				</div>
+			</div>
+		
+		</form>
+	</div>
+	<!------------------------------------------Informações Doenças--------------------------->
+</body>
+</html>

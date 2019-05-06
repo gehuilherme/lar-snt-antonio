@@ -1,0 +1,1 @@
+<?php include('../menu/menu.php'); include('cadastroDoencas.html');?>
